@@ -9,7 +9,8 @@ public class ServiceNote {
     public ServiceNote(NoteRepo rep){this.rep=rep;}
     /**
      * Adauga Nota
-     * Returneaza Nota adaugata*/
+     * Returneaza Nota adaugata
+     */
     public Nota add(Nota s,String fd){
         return rep.save(s,fd);
     }

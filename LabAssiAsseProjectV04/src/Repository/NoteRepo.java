@@ -19,7 +19,7 @@ import java.io.*;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static java.io.InputStream.nullInputStream;
+import static java.io.InputStream.*;
 
 public class NoteRepo extends AbstractRepo<Nota,Map.Entry<String,Integer>> {
     private DocumentBuilderFactory builderFactory;
@@ -112,6 +112,7 @@ public class NoteRepo extends AbstractRepo<Nota,Map.Entry<String,Integer>> {
     }
     public Nota save(Nota el,String fd) {
         AtomicInteger ok= new AtomicInteger();
+        //TODO - use equals() to compare entities
         findAll().forEach(n->{ if(n.getStudent()==el.getStudent() && n.getTema()==el.getTema())  ok.set(1); });
         /**
          for(Nota n:findAll()){

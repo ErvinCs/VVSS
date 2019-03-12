@@ -4,6 +4,12 @@ import java.time.LocalDateTime;
 import java.util.Map;
 import java.util.Random;
 import java.lang.Object;
+
+/**
+ * Grade entity.
+ * Holds reference to a st: Student and a tm: Teme.
+ * Holds the valoare: float of a grade and the data: int of it's assignment.
+ */
 public class Nota implements hasID<Map.Entry<String,Integer>>{
     private Map.Entry<String,Integer> id;
     private Student st;

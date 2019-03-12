@@ -1,5 +1,15 @@
 package Domain;
 
+/**
+ * A student entity
+ * Fields:
+ *  idStudent: String
+ *  nume: String
+ *  grupa: int
+ *  email: String
+ *  profesor: String
+ *
+ */
 public class Student implements hasID<String> {
     private String idStudent;
     private String nume;
@@ -43,9 +53,11 @@ public class Student implements hasID<String> {
     public void setProfesor(String prof){
         this.profesor=prof;
     }
+    //TODO
     public String toString(){
         return idStudent+' '+nume+' '+grupa+' '+email+' '+profesor;
     }
+    //TODO
     public boolean equals(Object object2) {
         return object2 instanceof Student && this.email==((Student) object2).email && this.grupa==((Student) object2).grupa && this.idStudent==((Student) object2).idStudent && this.nume==((Student) object2).nume && this.profesor==((Student) object2).profesor;
     }

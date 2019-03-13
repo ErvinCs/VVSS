@@ -8,14 +8,14 @@ import java.lang.Object;
 /**
  * Grade entity.
  * Holds reference to a st: Student and a tm: Teme.
- * Holds the valoare: float of a grade and the data: int of it's assignment.
+ * Holds the valoare: float of a grade and the (week) data: int of it's assignment.
  */
 public class Nota implements hasID<Map.Entry<String,Integer>>{
     private Map.Entry<String,Integer> id;
     private Student st;
     private Teme tm;
     private float valoare;
-    private int data;
+    private int data;   //Week number
     public Nota(Map.Entry<String,Integer> id,Student s,Teme t, float val, int d){
         this.id=id;
         this.st=s;
@@ -58,4 +58,13 @@ public class Nota implements hasID<Map.Entry<String,Integer>>{
         return this.tm.getDeadline();
     }
 
+    @Override
+    public String toString() {
+        return "Nota{ " + "ID=" + this.id.getValue().toString() + "; " +
+                "studentID=" + this.st.getID() + "; " +
+                "temeID=" + this.tm.getID().toString() + "; " +
+                "valoare=" + this.valoare + "; " +
+                "data=" + this.data +
+                "}";
+    }
 }

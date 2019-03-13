@@ -2,6 +2,14 @@ package Domain;
 
 import java.time.LocalDateTime;
 
+/**
+ * A theme entity
+ * Fields:
+ *  nr: Integer
+ *  descriere: String
+ *  deadline: Integer
+ *  sapt_primire: Integer
+ */
 public class Teme implements hasID<Integer>{
     private Integer nr;
     private String descriere;

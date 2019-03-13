@@ -6,6 +6,11 @@ import Validator.ValidationException;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Implements CrudRepo methods
+ * @param <E> type of the entity to pe persisted
+ * @param <ID> type of the id of the entity to be persisted
+ */
 public abstract class AbstractRepo <E extends hasID<ID>,ID> implements CrudRepo<E,ID>{
     private Validator<E> validator;
     private Map<ID,E> repo;

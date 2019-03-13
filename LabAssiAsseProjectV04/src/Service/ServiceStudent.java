@@ -8,11 +8,12 @@ public class ServiceStudent {
     public ServiceStudent(StudentRepo rep){this.rep=rep;}
     /**
      * Adauga student
-     * Returneaza studentul adaugat*/
+     * Returneaza studentul adaugat
+     */
     public Student add(Student s){
         return rep.save(s);
     }
-    /***
+    /**
      * Sterge student
      * @param id
      * @return studentul sters
@@ -21,7 +22,7 @@ public class ServiceStudent {
         return rep.delete(id);
     }
 
-    /***
+    /**
      * Modifica student
      * @param s
      * @return noul student
@@ -30,7 +31,7 @@ public class ServiceStudent {
         return rep.update(s);
     }
 
-    /***
+    /**
      * Cauta student dupa id
      * @param id
      * @return studentul gasit
@@ -39,7 +40,7 @@ public class ServiceStudent {
         return rep.findOne(id);
     }
 
-    /***
+    /**
      * @return studentii
      */
     public Iterable<Student> all(){

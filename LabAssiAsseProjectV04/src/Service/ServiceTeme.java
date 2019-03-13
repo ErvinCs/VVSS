@@ -7,7 +7,7 @@ public class ServiceTeme {
     private TemeRepo rep;
     public ServiceTeme(TemeRepo rep){this.rep=rep;}
 
-    /***
+    /**
      * Adauga tema
      * @param s
      * @return tema adaugata
@@ -16,7 +16,7 @@ public class ServiceTeme {
         return rep.save(s);
     }
 
-    /***
+    /**
      * sterge tema
      * @param id
      * @return tema stearsa
@@ -25,7 +25,7 @@ public class ServiceTeme {
         return rep.delete(id);
     }
 
-    /***
+    /**
      * Modifica tema
      * @param s
      * @return tema modificata
@@ -34,7 +34,7 @@ public class ServiceTeme {
         return rep.update(s);
     }
 
-    /***
+    /**
      * Cauta tema dupa id
      * @param id
      * @return tema gasita
@@ -43,7 +43,7 @@ public class ServiceTeme {
         return rep.findOne(id);
     }
 
-    /***
+    /**
      * @return temele
      */
     public Iterable<Teme> all(){

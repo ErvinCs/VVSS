@@ -3,6 +3,11 @@ package Validator;
 import Domain.Nota;
 
 public class NotaValidator implements Validator<Nota>{
+    /**
+     * Validates a Nota entity
+     * @param st Nota entity
+     * @return error msg String
+     */
     @Override
     public String validate(Nota st) {
         String m = new String();

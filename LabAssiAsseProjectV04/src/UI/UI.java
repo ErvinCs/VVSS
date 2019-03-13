@@ -7,6 +7,7 @@ import Service.ServiceNote;
 import Service.ServiceStudent;
 import Service.ServiceTeme;
 import Validator.ValidationException;
+import com.sun.media.sound.InvalidFormatException;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,6 +19,14 @@ import java.util.AbstractMap;
 import java.util.Date;
 import java.util.Map;
 
+/* Changes:
+ *  - catch NumberFormatException on line 72
+ *  - lines 103-105
+ *  - line 117, 134-136
+ *  - added print statement, line 160
+ *  - catch NumberFormatException on line 163
+ *  - catch NumberFormatException on line 96
+ */
 public class UI {
     private ServiceStudent srv;
     private ServiceTeme serv;
@@ -65,7 +74,7 @@ public class UI {
                     srv.add(stud);
                     //}
                     //else System.out.println("ID deja existent");
-                }catch(ValidationException ex){
+                }catch(ValidationException | NumberFormatException ex){
                     System.out.println(ex);
                 }
             }
@@ -87,14 +96,16 @@ public class UI {
                     serv.add(tema);
                     //}
                     //else System.out.println("ID deja existent");
-                }catch(ValidationException ex){
+                }catch(ValidationException | NumberFormatException ex){
                     System.out.println(ex);
                 }
             }
             if(s.equals("5")){
                 System.out.println("Dati id-ul: ");
                 String id=br.readLine();
-                srv.del(id);
+                if(srv.find(id)!=null)
+                    srv.del(id);
+                else System.out.println("Nu exista acest student");
             }
             if(s.equals("6")){
                 System.out.println("Dati id-ul");
@@ -104,22 +115,25 @@ public class UI {
                 else System.out.println("Nu exista acest student");
             }
             if(s.equals("7")) {
-                System.out.println("Dati id-ul");
-                String id=br.readLine();
-                System.out.println("Nume: ");
-                String nume = br.readLine();
-                System.out.println("Grupa: ");
-                String g = br.readLine();
-                int gr = Integer.parseInt(g);
-                System.out.println("Email: ");
-                String em = br.readLine();
-                System.out.println("Profesor: ");
-                String prof = br.readLine();
-                if(srv.find(id)!=null) {
-                    Student ss = new Student(id, nume, gr, em, prof);
-                    srv.mod(ss);
+                try {
+                    System.out.println("Dati id-ul");
+                    String id = br.readLine();
+                    System.out.println("Nume: ");
+                    String nume = br.readLine();
+                    System.out.println("Grupa: ");
+                    String g = br.readLine();
+                    int gr = Integer.parseInt(g);
+                    System.out.println("Email: ");
+                    String em = br.readLine();
+                    System.out.println("Profesor: ");
+                    String prof = br.readLine();
+                    if (srv.find(id) != null) {
+                        Student ss = new Student(id, nume, gr, em, prof);
+                        srv.mod(ss);
+                    } else System.out.println("Nu exista acest student.");
+                } catch (NumberFormatException | ValidationException ex) {
+                    System.out.println(ex.toString());
                 }
-                else System.out.println("Nu exista acest student.");
             }
             if(s.equals("8")) {
                 try {
@@ -131,7 +145,7 @@ public class UI {
                     System.out.println("Nota: ");
                     String n = br.readLine();
                     float nota = Float.parseFloat(n);
-                    System.out.println("Data: ");
+                    System.out.println("Data (Week No.): ");
                     String dt = br.readLine();
                     int data = Integer.parseInt(dt);
                     System.out.println("Feedback: ");
@@ -144,9 +158,10 @@ public class UI {
                         nota = nt.getValoare();
                         nt = new Nota(nid, st, tm, nota, data);
                         sv.add(nt,fd);
+                        System.out.println("Adaugat: " + nt.toString());
                     } else System.out.println("Student sau tema invalida.");
                 }
-                catch(ValidationException ex){
+                catch(ValidationException | NumberFormatException ex){
                     System.out.println(ex);
                 }
             }

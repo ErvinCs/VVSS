@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Domain.hasID</OriginalElement>
+  <nodes>
+    <node x="0.0" y="512.0">Repository.StudentRepo</node>
+    <node x="1158.0" y="764.0">UI.UI</node>
+    <node x="271.0" y="764.0">Service.ServiceTeme</node>
+    <node x="579.0" y="211.0">Domain.Nota</node>
+    <node x="520.0" y="865.0">Validator.NotaValidator</node>
+    <node x="1245.0" y="233.0">Domain.Student</node>
+    <node x="0.0" y="994.0">Service.ServiceNote</node>
+    <node x="305.9999999999999" y="0.0">Repository.CrudRepo</node>
+    <node x="0.0" y="764.0">Service.ServiceStudent</node>
+    <node x="735.5" y="764.0">Validator.Validator</node>
+    <node x="884.5" y="55.0">Domain.hasID</node>
+    <node x="955.0" y="255.0">Domain.Teme</node>
+    <node x="339.0" y="222.0">Repository.AbstractRepo</node>
+    <node x="309.0" y="512.0">Repository.TemeRepo</node>
+    <node x="718.0" y="865.0">Validator.StudentValidator</node>
+    <node x="931.0" y="865.0">Validator.TemeValidator</node>
+    <node x="609.0" y="545.0">Repository.NoteRepo</node>
+    <node x="241.0" y="994.0">Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Validator.StudentValidator" target="Validator.Validator">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="Validator.TemeValidator" target="Validator.Validator">
+      <point x="0.0" y="-25.5" />
+      <point x="1022.0" y="840.0" />
+      <point x="867.1666666666666" y="840.0" />
+      <point x="52.66666666666663" y="25.5" />
+    </edge>
+    <edge source="Domain.Teme" target="Domain.hasID">
+      <point x="0.0" y="-81.5" />
+      <point x="1090.0" y="191.0" />
+      <point x="933.25" y="191.0" />
+      <point x="9.75" y="25.5" />
+    </edge>
+    <edge source="Repository.TemeRepo" target="Repository.AbstractRepo">
+      <point x="0.0" y="-103.5" />
+      <point x="0.0" y="114.5" />
+    </edge>
+    <edge source="Domain.Nota" target="Domain.hasID">
+      <point x="0.0" y="-125.5" />
+      <point x="757.0" y="191.0" />
+      <point x="913.75" y="191.0" />
+      <point x="-9.75" y="25.5" />
+    </edge>
+    <edge source="Repository.NoteRepo" target="Repository.AbstractRepo">
+      <point x="0.0" y="-70.5" />
+      <point x="749.0" y="487.0" />
+      <point x="522.3333333333333" y="487.0" />
+      <point x="73.33333333333331" y="114.5" />
+    </edge>
+    <edge source="Repository.AbstractRepo" target="Repository.CrudRepo">
+      <point x="-55.00000000000006" y="-114.5" />
+      <point x="0.0" y="80.5" />
+    </edge>
+    <edge source="Domain.Student" target="Domain.hasID">
+      <point x="0.0" y="-103.5" />
+      <point x="1386.5" y="181.0" />
+      <point x="952.75" y="181.0" />
+      <point x="29.25" y="25.5" />
+    </edge>
+    <edge source="Repository.StudentRepo" target="Repository.AbstractRepo">
+      <point x="-5.6843418860808015E-14" y="-103.5" />
+      <point x="144.5" y="487.0" />
+      <point x="375.6666666666667" y="487.0" />
+      <point x="-73.33333333333331" y="114.5" />
+    </edge>
+    <edge source="Repository.AbstractRepo" target="Domain.hasID">
+      <point x="54.99999999999994" y="-114.5" />
+      <point x="503.99999999999994" y="181.0" />
+      <point x="894.25" y="181.0" />
+      <point x="-29.25" y="25.5" />
+    </edge>
+    <edge source="Validator.NotaValidator" target="Validator.Validator">
+      <point x="0.0" y="-25.5" />
+      <point x="609.0" y="840.0" />
+      <point x="761.8333333333334" y="840.0" />
+      <point x="-52.66666666666663" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.4999999999999998" x="1004.6666666666671" y="322.66666666666674" />
+  <SelectedNodes>
+    <node>Domain.hasID</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

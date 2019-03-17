@@ -13,15 +13,17 @@ import Validator.TemeValidator;
 import java.io.IOException;
 
 public class Main {
-    //Jesus Christ, my eyes are bleeding
     public static void main(String[] args) throws IOException{
-        StudentRepo rep=new StudentRepo(new StudentValidator(),"C:\\Temp\\studenti.xml");
-        TemeRepo repo=new TemeRepo(new TemeValidator(),"C:\\Temp\\teme.xml");
-        NoteRepo r=new NoteRepo(new NotaValidator());
-        ServiceStudent srv=new ServiceStudent(rep);
-        ServiceTeme serv=new ServiceTeme(repo);
-        ServiceNote sv=new ServiceNote(r);
-        UI ui=new UI(srv,serv,sv);
+        String dirPath = System.getProperty("user.dir");
+        //System.out.println("Present Project Directory : " + dirPath);
+
+        StudentRepo rep = new StudentRepo(new StudentValidator(),dirPath + "\\src\\studenti.xml");
+        TemeRepo repo = new TemeRepo(new TemeValidator(),dirPath + "\\src\\teme.xml");
+        NoteRepo r = new NoteRepo(new NotaValidator());
+        ServiceStudent srv = new ServiceStudent(rep);
+        ServiceTeme serv = new ServiceTeme(repo);
+        ServiceNote sv = new ServiceNote(r);
+        UI ui = new UI(srv,serv,sv);
         ui.show();
 
     }

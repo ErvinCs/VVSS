@@ -27,6 +27,11 @@ public class AppTest
     }
 
     @Test
+    /*
+     * Adding valid student
+     * Adding duplicate valid student
+     * 
+     */
     public void addStudent() {
         List<Student> studentList = new ArrayList<>();
         Validator<Student> studentValidator = new StudentValidator();

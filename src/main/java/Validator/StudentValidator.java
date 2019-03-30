@@ -19,11 +19,9 @@ public class StudentValidator implements Validator<Student> {
         //TODO - The regex can still match invalid e-mails
         if (!st.getMail().contains("@") || !st.getMail().contains("."))
             m = m + "\nEmail invalid";
-        //TODO - dots and commas in the name
-        if(!st.getNume().matches("[A-Za-z ,.'-]+"))
+        if(!st.getNume().matches("[A-Za-z'-]+"))
             m=m+"\nNume invalid";
-        //TODO - dots and commas in the name
-        if(!st.getProfesor().matches("[A-Za-z ,.'-]+"))
+        if(!st.getProfesor().matches("[A-Za-z'-]+"))
             m=m+"\nNume profesor invalid";
         return m;
     }

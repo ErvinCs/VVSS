@@ -49,5 +49,7 @@ public class ServiceTeme {
     public Iterable<Teme> all(){
         return rep.findAll();
     }
+
+    public int getSize() {return rep.size();}
 }
 

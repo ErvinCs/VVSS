@@ -20,12 +20,17 @@ import java.io.FileOutputStream;
 public class StudentRepo extends AbstractRepo<Student,String> {
     private String fName;
     private DocumentBuilderFactory builderFactory;
-    public StudentRepo(Validator<Student> val, String n){
+    private Boolean check;
+
+    public StudentRepo(Validator<Student> val, String n, Boolean i){
         super(val);
         this.fName=n;
         builderFactory=DocumentBuilderFactory.newInstance();
-        loadFromFile();
+        check = i;
+        if (check)
+            loadFromFile();
     }
+
     public void loadFromFile(){
         try{
             DocumentBuilder db=builderFactory.newDocumentBuilder();
@@ -92,19 +97,22 @@ public class StudentRepo extends AbstractRepo<Student,String> {
     @Override
     public Student save(Student el) {
         Student t= super.save(el);
-        writeToFile();
+        if (check)
+            writeToFile();
         return t;
     }
     @Override
     public Student delete(String id){
         Student t=super.delete(id);
-        writeToFile();
+        if (check)
+            writeToFile();
         return t;
     }
     @Override
     public Student update(Student tt){
         Student t=super.update(tt);
-        writeToFile();
+        if (check)
+            writeToFile();
         return t;
     }
 

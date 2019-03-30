@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Lab2Maven" />
         <module name="LabMaven" />
+        <module name="VVSS" />
       </profile>
     </annotationProcessing>
   </component>

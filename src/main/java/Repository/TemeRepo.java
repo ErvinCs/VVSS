@@ -20,11 +20,15 @@ import java.io.FileOutputStream;
 public class TemeRepo extends AbstractRepo<Teme,Integer> {
     private String fName;
     private DocumentBuilderFactory builderFactory;
-    public TemeRepo(Validator<Teme> val, String n){
+    private Boolean check;
+
+    public TemeRepo(Validator<Teme> val, String n, Boolean i){
         super(val);
         this.fName=n;
         builderFactory=DocumentBuilderFactory.newInstance();
-        loadFromFile();
+        this.check = i;
+        if (check)
+            loadFromFile();
     }
     public void loadFromFile(){
         try{
@@ -88,19 +92,22 @@ public class TemeRepo extends AbstractRepo<Teme,Integer> {
     @Override
     public Teme save(Teme el) {
         Teme t= super.save(el);
-        writeToFile();
+        if (check)
+            writeToFile();
         return t;
     }
     @Override
     public Teme delete(Integer id){
         Teme t=super.delete(id);
-        writeToFile();
+        if (check)
+            writeToFile();
         return t;
     }
     @Override
     public Teme update(Teme tt){
         Teme t=super.update(tt);
-        writeToFile();
+        if (check)
+            writeToFile();
         return t;
     }
 

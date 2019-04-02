@@ -18,8 +18,8 @@ public class AddStudent {
     @Test
     /*
      * Adding valid student
-     * Adding duplicate valid student
-     *
+     * Adding duplicate valid student with different ID
+     * Expected: Success
      */
     public void addStudent() {
         Student student1 = new Student("1","name",932,"Lemne@.com","Prof");

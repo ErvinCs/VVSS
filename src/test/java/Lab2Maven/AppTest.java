@@ -43,63 +43,65 @@ public class AppTest
         StudentRepo rep = new StudentRepo(new StudentValidator(),dirPath + "\\src\\studenti.xml",false);
         ServiceStudent srv = new ServiceStudent(rep);
 
-        Student student1 = new Student("1","name",932,"Lemne@.com","Prof");
-        Student student3 = new Student("2","name1",933,"el@.com","profg");
+        Student student1 = new Student("1","name",932,"Lemne@gmail.com","Prof");
+        Student student3 = new Student("2","name1",933,"el@gmail.com","profg");
         Student student4 = new Student("3","",932,"ret@.com","fdf");
         Student student5 = new Student("4","fsdf",932,"rcom","fdf");
-        Student student6 = new Student("5","fds",1932,"ret@.com","fdf");
+        Student student6 = new Student("5","fds",1932,"ret@com","fdf");
         Student student7 = new Student("6","fds",93209,"","");
         Student student8 = new Student("7","",932,"re.com","fdf");
         Student student9 = new Student("8","nameH",933,"el@.com","profg");
 
+        //correct add
         try{
            if (srv.find(student1.getID()) == null)
                srv.add(student1);
         }catch (ValidationException | NumberFormatException ignored){}
         assertEquals(1,srv.getSize());
 
+        //add duplicate - don't add
         try{
             if (srv.find(student1.getID()) == null)
                 srv.add(student1);
         }catch (ValidationException | NumberFormatException ignored){}
         assertEquals(1,srv.getSize());
 
-        try{
-            if (srv.find(student3.getID()) == null)
-                srv.add(student3);
-        }catch (ValidationException | NumberFormatException ignored){}
-        assertEquals(1,srv.getSize());
-
+        //add invalid name
         try{
             if (srv.find(student4.getID()) == null)
                 srv.add(student4);
         }catch (ValidationException | NumberFormatException ignored){}
         assertEquals(1,srv.getSize());
 
+        //add invalid e-mail
         try{
             if (srv.find(student5.getID()) == null)
                 srv.add(student5);
         }catch (ValidationException | NumberFormatException ignored){}
         assertEquals(1,srv.getSize());
 
+        //add invalid group
         try{
             if (srv.find(student6.getID()) == null)
                 srv.add(student6);
         }catch (ValidationException | NumberFormatException ignored){}
         assertEquals(1,srv.getSize());
 
+        //add empty name and empty e-mail and invalid group
         try{
             if (srv.find(student7.getID()) == null)
                 srv.add(student7);
         }catch (ValidationException | NumberFormatException ignored){}
         assertEquals(1,srv.getSize());
 
+        //add invalid e-mail
         try{
             if (srv.find(student8.getID()) == null)
                 srv.add(student8);
         }catch (ValidationException | NumberFormatException ignored){}
         assertEquals(1,srv.getSize());
 
+        //anohter correct add
         try{
             if (srv.find(student9.getID()) == null)
                 srv.add(student9);

@@ -64,13 +64,13 @@ public class UI {
                     String em = br.readLine();
                     System.out.println("Profesor: ");
                     String prof = br.readLine();
-                    // if(srv.find(id)==null) {
-                    Student stud = new Student(id, nume, gr, em, prof);
-                    srv.add(stud);
-                    //}
-                    //else System.out.println("ID deja existent");
+                    if(srv.find(id)==null) {
+                        Student stud = new Student(id, nume, gr, em, prof);
+                        srv.add(stud);
+                    }
+                    else System.out.println("ID deja existent");
                 }catch(ValidationException | NumberFormatException ex){
-                    System.out.println(ex);
+                    System.out.println(ex.getMessage());
                 }
             }
             if(s.equals("4")) {
@@ -86,11 +86,11 @@ public class UI {
                     System.out.println("Deadline: ");
                     String dl = br.readLine();
                     int d = Integer.parseInt(dl);
-                    //if(serv.find(nr)==null) {
-                    Teme tema = new Teme(nr, desc, sapt, d);
-                    serv.add(tema);
-                    //}
-                    //else System.out.println("ID deja existent");
+                    if(serv.find(nr)==null) {
+                        Teme tema = new Teme(nr, desc, sapt, d);
+                        serv.add(tema);
+                    }
+                    else System.out.println("ID deja existent");
                 }catch(ValidationException | NumberFormatException ex){
                     System.out.println(ex);
                 }

@@ -28,9 +28,8 @@ public abstract class AbstractRepo <E extends hasID<ID>,ID> implements CrudRepo<
     public E save(E el){
         String msg=validator.validate(el);
         if(msg.equals("")){
-            E el2=findOne(el.getID());
             repo.putIfAbsent(el.getID(),el);
-            return el2;
+            return findOne(el.getID());
         }
         else throw new ValidationException(msg);
     }
@@ -54,9 +53,7 @@ public abstract class AbstractRepo <E extends hasID<ID>,ID> implements CrudRepo<
         if(msg.equals("")){
             E el2=findOne(elem.getID());
             repo.put(elem.getID(),elem);
-            if(el2==null)
-                return elem;
-            else return null;
+            return el2;
 
         }
         else throw new ValidationException(msg);

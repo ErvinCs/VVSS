@@ -77,6 +77,7 @@ public class AddTheme {
         Teme teme= new Teme(123,"fgdfgd",12,12);
         Teme teme1 = new Teme(1,"dfgfdgfdg",1,16);
         Teme teme2 = new Teme(10,"dfgfdgfdg",0,0);
+        Teme teme4 = new Teme(10,"dfgfdgfdg",-1,-1);
         Teme teme3 = new Teme(10,"dfgfdgfdg",11,6);
 
         try{
@@ -93,6 +94,10 @@ public class AddTheme {
             if (srv.find(teme2.getID()) == null)
                 srv.add(teme2);
         }catch (ValidationException | NumberFormatException ignored){}
+        try{
+            if (srv.find(teme4.getID()) == null)
+                srv.add(teme4);
+        }catch (ValidationException | NumberFormatException ignored){}
 
         try{
             if (srv.find(teme3.getID()) == null)
@@ -106,6 +111,7 @@ public class AddTheme {
         Teme teme= new Teme(123,"fgdfgd",12,12);
         Teme teme1 = new Teme(1,"dfgfdgfdg",156,1);
         Teme teme2 = new Teme(10,"dfgfdgfdg",0,7);
+        Teme teme3 = new Teme(10,"dfgfdgfdg",-1,7);
 
         try{
             if (srv.find(teme.getID()) == null)
@@ -115,6 +121,11 @@ public class AddTheme {
         try{
             if (srv.find(teme1.getID()) == null)
                 srv.add(teme1);
+        }catch (ValidationException | NumberFormatException ignored){}
+
+        try{
+            if (srv.find(teme3.getID()) == null)
+                srv.add(teme3);
         }catch (ValidationException | NumberFormatException ignored){}
 
         try{

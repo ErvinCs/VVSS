@@ -61,10 +61,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="deleteStudent" classname="Lab2Maven.AppTest" time="0"/>
-  <testcase name="shouldAnswerWithTrue" classname="Lab2Maven.AppTest" time="0"/>
-  <testcase name="addTheme" classname="Lab2Maven.AppTest" time="0"/>
-  <testcase name="findStudent" classname="Lab2Maven.AppTest" time="0"/>
-  <testcase name="addStudent" classname="Lab2Maven.AppTest" time="0"/>
-  <testcase name="updateStudent" classname="Lab2Maven.AppTest" time="0"/>
+  <testcase name="testAddStudent" classname="Lab2Maven.BigBangIntegration" time="0"/>
+  <testcase name="testAddTheme" classname="Lab2Maven.BigBangIntegration" time="0"/>
+  <testcase name="testAddGrade" classname="Lab2Maven.BigBangIntegration" time="0"/>
+  <testcase name="integrationTest" classname="Lab2Maven.BigBangIntegration" time="0"/>
 </testsuite>

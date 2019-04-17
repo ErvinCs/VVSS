@@ -5,7 +5,7 @@ import org.junit.Test;
 public class BigBangIntegration {
 
     @Test
-    private void testAddStudent(){
+    public void testAddStudent(){
         new AddStudent().checkName();
         new AddStudent().checkProfessor();
         new AddStudent().checkId();
@@ -16,7 +16,7 @@ public class BigBangIntegration {
     }
 
     @Test
-    private void testAddTheme(){
+    public void testAddTheme(){
         new AddTheme().addTheme();
         new AddTheme().checkDeadline();
         new AddTheme().checkDuplicates();
@@ -25,7 +25,7 @@ public class BigBangIntegration {
     }
 
     @Test
-    private void testAddGrade(){
+    public void testAddGrade(){
         new AddGrade().addNota();
         new AddGrade().checkDeadline();
         new AddGrade().checkDuplicate();

@@ -4,6 +4,7 @@ import org.junit.Test;
 
 public class BigBangIntegration {
 
+    @Test
     private void testAddStudent(){
         new AddStudent().checkName();
         new AddStudent().checkProfessor();
@@ -14,6 +15,7 @@ public class BigBangIntegration {
         new AddStudent().addStudent();
     }
 
+    @Test
     private void testAddTheme(){
         new AddTheme().addTheme();
         new AddTheme().checkDeadline();
@@ -22,6 +24,7 @@ public class BigBangIntegration {
         new AddTheme().checkSaptPrimire();
     }
 
+    @Test
     private void testAddGrade(){
         new AddGrade().addNota();
         new AddGrade().checkDeadline();

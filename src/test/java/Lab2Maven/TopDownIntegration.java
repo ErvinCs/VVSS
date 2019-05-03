@@ -2,10 +2,10 @@ package Lab2Maven;
 
 import org.junit.Test;
 
-public class BigBangIntegration {
+public class TopDownIntegration {
 
     @Test
-    public void testAddStudent(){
+    public void testAddStudentTopDown(){
         new AddStudent().checkName();
         new AddStudent().checkProfessor();
         new AddStudent().checkId();
@@ -16,7 +16,8 @@ public class BigBangIntegration {
     }
 
     @Test
-    public void testAddTheme(){
+    public void testAddThemeTopDown(){
+        testAddStudentTopDown();
         new AddTheme().addTheme();
         new AddTheme().checkDeadline();
         new AddTheme().checkDuplicates();
@@ -25,7 +26,8 @@ public class BigBangIntegration {
     }
 
     @Test
-    public void testAddGrade(){
+    public void testAddGradeTopDown(){
+        testAddThemeTopDown();
         new AddGrade().addNota();
         new AddGrade().checkDeadline();
         new AddGrade().checkDuplicate();
@@ -35,8 +37,6 @@ public class BigBangIntegration {
 
     @Test
     public void integrationTest(){
-        testAddStudent();
-        testAddTheme();
-        testAddGrade();
+        testAddGradeTopDown();
     }
 }

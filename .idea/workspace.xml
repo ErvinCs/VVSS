@@ -92,8 +92,8 @@
       <file leaf-file-name="AddTheme.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Lab2Maven/AddTheme.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="476">
+              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -119,11 +119,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BigBangIntegration.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BigBangIntegration.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Lab2Maven/BigBangIntegration.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TopDownIntegration.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Lab2Maven/TopDownIntegration.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#1018#1019#0" expanded="true" />
+                <element signature="e#1048#1049#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,6 +177,7 @@
         <option value="$PROJECT_DIR$/src/test/java/Lab2Maven/AddGrade.java" />
         <option value="$PROJECT_DIR$/src/test/java/Lab2Maven/AddStudent.java" />
         <option value="$PROJECT_DIR$/src/test/java/Lab2Maven/BigBangIntegration.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Lab2Maven/TopDownIntegration.java" />
       </list>
     </option>
   </component>
@@ -211,6 +225,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -222,19 +237,6 @@
               <item name="Lab2Maven" type="b2602c69:ProjectViewProjectNode" />
               <item name="VVSS" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab2Maven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VVSS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab2Maven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VVSS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Lab2Maven" type="b2602c69:ProjectViewProjectNode" />
@@ -262,7 +264,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -280,18 +281,18 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Faculta\An III\Semestru_2\SSVV\VVSS\LabMaven\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="UI" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Faculta\An III\Semestru_2\SSVV\VVSS\LabMaven\src\main\java" />
       <recent name="D:\Faculta\An III\Semestru_2\SSVV\VVSS\LabMaven\src\main\java\Service" />
       <recent name="D:\Faculta\An III\Semestru_2\SSVV\VVSS\LabMaven\src\main\java\Validator" />
       <recent name="D:\Faculta\An III\Semestru_2\SSVV\VVSS\LabMaven\src\main\java\Repository" />
       <recent name="D:\Faculta\An III\Semestru_2\SSVV\VVSS\LabMaven\src\main\java\Domain" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="UI" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Faculta\An III\Semestru_2\SSVV\VVSS\LabMaven\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -306,7 +307,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AddGrade">
+  <component name="RunManager" selected="JUnit.TopDownIntegration">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method>
@@ -327,29 +328,6 @@
       <option name="MAIN_CLASS_NAME" value="Lab2Maven.AddGrade" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="AddGrade.checkDeadline" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="VVSS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Lab2Maven.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Lab2Maven" />
-      <option name="MAIN_CLASS_NAME" value="Lab2Maven.AddGrade" />
-      <option name="METHOD_NAME" value="checkDeadline" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -428,6 +406,29 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="TopDownIntegration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VVSS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab2Maven.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Lab2Maven" />
+      <option name="MAIN_CLASS_NAME" value="Lab2Maven.TopDownIntegration" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -474,18 +475,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.AddGrade" />
-      <item itemvalue="JUnit.AddGrade.checkDeadline" />
       <item itemvalue="JUnit.AddGrade.checkDuplicate" />
       <item itemvalue="JUnit.BigBangIntegration" />
       <item itemvalue="JUnit.AddStudent.checkDuplicates" />
+      <item itemvalue="JUnit.TopDownIntegration" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TopDownIntegration" />
         <item itemvalue="JUnit.AddGrade" />
         <item itemvalue="JUnit.BigBangIntegration" />
         <item itemvalue="JUnit.AddStudent.checkDuplicates" />
         <item itemvalue="JUnit.AddGrade.checkDuplicate" />
-        <item itemvalue="JUnit.AddGrade.checkDeadline" />
       </list>
     </recent_temporary>
   </component>
@@ -516,17 +517,13 @@
       <workItem from="1554292104833" duration="585000" />
       <workItem from="1554382079995" duration="1263000" />
       <workItem from="1555441862839" duration="4881000" />
-      <workItem from="1555484663555" duration="34000" />
+      <workItem from="1555484663555" duration="2477000" />
+      <workItem from="1556197497113" duration="66000" />
+      <workItem from="1556877870842" duration="281000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AddGrade - 2019.04.16 at 23h 08m 19s.xml">
-      <configuration name="AddGrade" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AddGrade_checkDuplicate - 2019.04.16 at 23h 14m 09s.xml">
-      <configuration name="AddGrade.checkDuplicate" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AddGrade - 2019.04.16 at 23h 14m 15s.xml">
       <configuration name="AddGrade" configurationId="JUnit" />
     </history-entry>
@@ -551,9 +548,15 @@
     <history-entry file="AddGrade - 2019.04.16 at 23h 31m 51s.xml">
       <configuration name="AddGrade" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TopDownIntegration - 2019.05.03 at 13h 07m 55s.xml">
+      <configuration name="TopDownIntegration" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TopDownIntegration - 2019.05.03 at 13h 08m 33s.xml">
+      <configuration name="TopDownIntegration" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29572000" />
+    <option name="totallyTimeSpent" value="32362000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -570,6 +573,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32838285" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -591,7 +595,6 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Flutter Inspector" order="10" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32838285" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -619,6 +622,68 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Lab2Maven/AddTheme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Lab2Maven/AddGrade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2278">
+          <caret line="146" selection-start-line="146" selection-end-line="146" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Lab2Maven/AddStudent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Lab2Maven/BigBangIntegration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Lab2Maven/AddTheme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Lab2Maven/AddGrade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2482">
+          <caret line="146" selection-start-line="146" selection-end-line="146" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Lab2Maven/AddStudent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Lab2Maven/BigBangIntegration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Lab2Maven/AddTheme.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -780,9 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -863,13 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Lab2Maven/AddTheme.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Lab2Maven/AddGrade.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2278">
@@ -880,10 +935,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Lab2Maven/AddTheme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Lab2Maven/BigBangIntegration.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Lab2Maven/TopDownIntegration.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#1018#1019#0" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Add student","Fill in a valid student","FAILURE","2019-05-05T16:58:23.074+03:00[Europe/Bucharest]","0.0","48.55"
+"Add student","Fill in a invalid student","FAILURE","2019-05-05T16:59:12.587+03:00[Europe/Bucharest]","0.0","32.1"
+"Add student serenity","Fill in a valid student","FAILURE","2019-05-19T14:30:30.379+03:00[Europe/Athens]","0.0","7.32"
+"Add student serenity","Fill in a invalid student","FAILURE","2019-05-19T14:30:38.308+03:00[Europe/Athens]","0.0","7.1"

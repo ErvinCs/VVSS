@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="MySerenityJUnitArchetypeG.features.search.SearchByKeywordStory" skipped="0" tests="4" time="26.51" timestamp="2019-05-08T10:53:26.361+03:00[Europe/Athens]"><testcase classname="MySerenityJUnitArchetypeG.features.search.SearchByKeywordStory" name="Searching by keyword banana should display the corresponding article"/><testcase classname="MySerenityJUnitArchetypeG.features.search.SearchByKeywordStory" name="Searching by keyword pear should display the corresponding article"/><testcase classname="MySerenityJUnitArchetypeG.features.search.SearchByKeywordStory" name="Searching by ambiguous keyword should display the disambiguation page"><failure message="&#10;Expected: a collection containing a string containing &quot;From Latin ambiguus&quot;&#10;     but: was &quot;Open to multiple interpretations.&#10;The politician was criticized for his ambiguous statements and lack of precision.&quot;, was &quot;Vague and unclear.&#10;He gave an ambiguous answer.&quot;, was &quot;(obsolete, of persons) Hesitant; uncertain; not taking sides. quotations ▼&quot;, was &quot;&quot;" type="java.lang.AssertionError">
+Expected: a collection containing a string containing "From Latin ambiguus"
+     but: was "Open to multiple interpretations.
+The politician was criticized for his ambiguous statements and lack of precision.", was "Vague and unclear.
+He gave an ambiguous answer.", was "(obsolete, of persons) Hesitant; uncertain; not taking sides. quotations ▼", was ""</failure><system-err>
+Expected: a collection containing a string containing "From Latin ambiguus"
+     but: was "Open to multiple interpretations.
+The politician was criticized for his ambiguous statements and lack of precision.", was "Vague and unclear.
+He gave an ambiguous answer.", was "(obsolete, of persons) Hesitant; uncertain; not taking sides. quotations ▼", was ""&#13;
+MySerenityJUnitArchetypeG.steps.serenity.EndUserSteps.should_see_definition(EndUserSteps.java:27)&#13;
+MySerenityJUnitArchetypeG.features.search.SearchByKeywordStory.searching_by_ambiguous_keyword_should_display_the_disambiguation_page(SearchByKeywordStory.java:61)&#13;
+</system-err></testcase><testcase classname="MySerenityJUnitArchetypeG.features.search.SearchByKeywordStory" name="Searching by keyword apple should display the corresponding article"/></testsuite>

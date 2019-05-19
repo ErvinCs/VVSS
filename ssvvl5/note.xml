@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Entitati>
+<nota IDStudent="1" IDTema="1">
+<Nota>10.0</Nota>
+<SaptamanaPredare>7</SaptamanaPredare>
+<Feedback>done</Feedback>
+</nota>
+<nota IDStudent="1" IDTema="2">
+<Nota>7.5</Nota>
+<SaptamanaPredare>9</SaptamanaPredare>
+<Feedback>done</Feedback>
+</nota>
+<nota IDStudent="1" IDTema="3">
+<Nota>6.0</Nota>
+<SaptamanaPredare>8</SaptamanaPredare>
+<Feedback>done</Feedback>
+</nota>
+<nota IDStudent="123" IDTema="123">
+<Nota>4.0</Nota>
+<SaptamanaPredare>125</SaptamanaPredare>
+<Feedback>feedback</Feedback>
+</nota>
+<nota IDStudent="-2" IDTema="1">
+<Nota>0.0</Nota>
+<SaptamanaPredare>9</SaptamanaPredare>
+<Feedback>bun</Feedback>
+</nota>
+</Entitati>

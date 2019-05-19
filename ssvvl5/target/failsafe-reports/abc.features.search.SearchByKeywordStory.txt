@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: abc.features.search.SearchByKeywordStory
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 61.698 sec - in abc.features.search.SearchByKeywordStory

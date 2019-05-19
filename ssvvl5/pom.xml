@@ -73,46 +73,37 @@
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-server</artifactId>
             <version>9.4.18.v20190429</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/jetty-server-9.4.18.v20190429.jar</systemPath>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-util -->
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-util</artifactId>
             <version>9.4.18.v20190429</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/jetty-util-9.4.18.v20190429.jar</systemPath>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-http -->
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-http</artifactId>
             <version>9.4.18.v20190429</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/jetty-http-9.4.18.v20190429.jar</systemPath>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-io -->
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-io</artifactId>
             <version>9.4.18.v20190429</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/jetty-io-9.4.18.v20190429.jar</systemPath>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-servlet -->
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-servlet</artifactId>
             <version>9.4.18.v20190429</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/jetty-servlet-9.4.18.v20190429.jar</systemPath>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-security -->
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-security</artifactId>
             <version>9.4.18.v20190429</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/jetty-security-9.4.18.v20190429.jar</systemPath>
         </dependency>
-
     </dependencies>
     <build>
         <plugins>

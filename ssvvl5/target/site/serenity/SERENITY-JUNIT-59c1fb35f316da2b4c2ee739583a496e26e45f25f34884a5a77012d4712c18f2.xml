@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="abc.features.search.AddStudent" skipped="0" tests="2" time="14.26" timestamp="2019-05-19T16:09:34.001+03:00[Europe/Athens]"><testcase classname="abc.features.search.AddStudent" name="Fill in a valid student"><failure message="The following error occurred: Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">The following error occurred: Expected enabled element was not enabled</failure><system-err>The following error occurred: Expected enabled element was not enabled&#13;
-abc.pages.StudentPage.setIdStudent(StudentPage.java:36)&#13;
-abc.steps.serenity.AddStudentSteps.fillStudent(AddStudentSteps.java:17)&#13;
-abc.features.search.AddStudent.fill_in_a_valid_student(AddStudent.java:28)&#13;
-</system-err></testcase><testcase classname="abc.features.search.AddStudent" name="Fill in a invalid student"><failure message="The following error occurred: Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">The following error occurred: Expected enabled element was not enabled</failure><system-err>The following error occurred: Expected enabled element was not enabled&#13;
-abc.pages.StudentPage.setIdStudent(StudentPage.java:36)&#13;
-abc.steps.serenity.AddStudentSteps.fillStudent(AddStudentSteps.java:17)&#13;
-abc.features.search.AddStudent.fill_in_a_invalid_student(AddStudent.java:36)&#13;
-</system-err></testcase></testsuite>

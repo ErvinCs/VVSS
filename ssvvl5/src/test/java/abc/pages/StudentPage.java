@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@DefaultUrl("http://localhost:63342/ssvvl5/addStudent.html?_ijt=8uiqmf7v1vsp94tn2bsrrmv9ig")
+@DefaultUrl("http://localhost:8080/student")
 public class StudentPage extends PageObject {
 
     @FindBy(id="idStudent")

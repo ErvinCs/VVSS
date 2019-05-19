@@ -6,4 +6,16 @@
         <mail>wer@.</mail>
         <profesor>wer</profesor>
     </Student>
+    <Student idStudent="2">
+        <nume>sacsa</nume>
+        <grupa>123</grupa>
+        <mail>as@mail.com</mail>
+        <profesor>asdsf</profesor>
+    </Student>
+    <Student idStudent="3">
+        <nume>asdsafsa</nume>
+        <grupa>123</grupa>
+        <mail>asd@gog.com</mail>
+        <profesor>asd</profesor>
+    </Student>
 </inbox>

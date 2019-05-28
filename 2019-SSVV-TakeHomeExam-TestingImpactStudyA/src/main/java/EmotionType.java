@@ -1,3 +1,3 @@
 public enum EmotionType {
-    Joy, Anger, Sadness, Disgust, Fear;
+    Joy, Anger, Sadness, Disgust, Fear
 }

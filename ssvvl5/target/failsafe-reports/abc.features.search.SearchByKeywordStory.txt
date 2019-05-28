@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: abc.features.search.SearchByKeywordStory
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.047 sec <<< FAILURE! - in abc.features.search.SearchByKeywordStory
+initializationError(abc.features.search.SearchByKeywordStory)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.JAXBException
+
